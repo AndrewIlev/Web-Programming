@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запропонувати місто</title>
+</head>
+<body>
+    <header>
+        <h1>Запропонувати місто</h1>
+        <nav aria-label="Основна навігація">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="city-lviv.html">Львів</a></li>
+                <li><a href="city-tokyo.html">Токіо</a></li>
+                <li><a href="city-stockholm.html">Стокгольм</a></li>
+                <li><a href="form.html">Запропонувати місто</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Яке місто додати до наступного списку?</h2>
+            <form action="#" method="get">
+                <p>
+                    <label for="name">Твоє ім’я:</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </p>
+                <p>
+                    <label for="city">Назва міста:</label>
+                    <input type="text" id="city" name="city" required>
+                </p>
+                <p>
+                    <label for="country">Країна:</label>
+                    <input type="text" id="country" name="country" required>
+                </p>
+                <p>
+                    <label for="reason">Чому варто відвідати це місто?</label><br>
+                    <textarea id="reason" name="reason" rows="5" cols="40" required></textarea>
+                </p>
+                <p>
+                    <label for="category">Що найбільше приваблює в місті?</label>
+                    <select id="category" name="category" required>
+                        <option value="" selected disabled>Обери варіант</option>
+                        <option value="history">Історія та архітектура</option>
+                        <option value="culture">Культура та традиції</option>
+                        <option value="nature">Природа та краєвиди</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </p>
+                <button type="submit">Надіслати пропозицію</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Повернутися на головну</a></p>
+        <p>Андрій Ілевич</p>
+    </footer>
+</body>
+</html>
